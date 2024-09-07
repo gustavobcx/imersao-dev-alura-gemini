@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Durma Melhor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <span class="credito-imagem">imagem gerada com IA</span>
+    <header>
+      <h1>Encontre seu colchão</h1>
+    </header>
+    <main>
+      <section class="caixa-pesquisa">
+        <input
+          type="text"
+          id="campo-pesquisa"
+          placeholder="Molas ensacadas, Espuma, King, Firme"
+        />
+        <div class="botoes-pesquisa">
+          <button class="btn" onclick="pesquisar()">Pesquisar</button>
+        </div>
+      </section>
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+    <footer>
+      <p>2024 - Durma Melhor. &copy; Todos os direitos reservados</p>
+      <p>Entre em contato pelo email: suporte@durmamelhor.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

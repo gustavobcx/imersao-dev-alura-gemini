@@ -1,0 +1,171 @@
+body {
+  font-family: sans-serif;
+  background-image: url("./bedroom-mdesigner_f3b810db-d5e2-4f3d-8cf3-36d9ac72c0ef.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.credito-imagem {
+  position: fixed;
+  top: 4px;
+  right: 4px;
+  color: #fff;
+  font-size: .8rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.caixa-pesquisa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.botoes-pesquisa {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  text-decoration: none;
+  /* color: darkblue; */
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: indigo;
+  color: #f5f7f8;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkviolet;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section input {
+  width: 30rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  color: #45474b;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.resultados-pesquisa {
+  width: 60rem;
+  height: 46vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.item-resultado {
+  background: #fff;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado h2 {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.item-resultado h3 {
+  font-size: 1rem;
+  color: #000;
+}
+
+.descricao {
+  color: #777;
+  margin: 0.5rem 0;
+}
+
+.medidas span {
+  display: inline-block;
+  padding: 0.8rem;
+  background: indigo;
+  color: #fff;
+  border-radius: 1.2rem;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #0c0b0bc8;
+  color: #ffffff;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  section input {
+    width: 25rem;
+    padding: 0.8rem;
+  }
+
+  .resultados-pesquisa {
+    width: 40rem;
+    height: 40vh;
+  }
+
+  .item-resultado h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  section input {
+    width: 17rem;
+  }
+
+  section button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .resultados-pesquisa {
+    width: 90%;
+    height: 50vh;
+  }
+
+  .item-resultado h2 {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
